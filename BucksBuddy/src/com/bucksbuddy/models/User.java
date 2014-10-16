@@ -3,7 +3,9 @@ package com.bucksbuddy.models;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User {
+import com.bucksbuddy.observer.Observer;
+
+public class User implements Observer{
 	private String username;
 	private String email;
 	private String password;
@@ -86,6 +88,13 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	
